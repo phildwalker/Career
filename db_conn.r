@@ -30,7 +30,7 @@ jpod <- dbConnect(odbc::odbc(), "dsnNAME",uid=Sys.getenv("USERNAME"),pwd=Sys.get
   # Retrieve the rest of the results
   rest <- dbFetch(result)
   
-odbcClose(jpod)
+dbDisconnect(jpod)
 
 
 # listTBLS
