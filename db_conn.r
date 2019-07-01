@@ -35,3 +35,11 @@ dbDisconnect(jpod)
 
 # listTBLS
 
+#include access
+testdb <- file.path(c(paste0(here(),"/TestDB.accdb")))
+
+channel <- odbcConnectAccess2007(testdb)
+qryOut <- sqlFetch(channel,"qry_SIGassoc")
+odbcClose(channel)
+
+
