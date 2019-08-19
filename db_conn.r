@@ -2,6 +2,9 @@ usethis::edit_r_environ()
 Sys.getenv("userid")
 Sys.getenv("pwd")
 
+keyring::key_set("pwd")
+keyring::key_get("pwd")
+
 rm(list = ls())
 cat("\014")
 
