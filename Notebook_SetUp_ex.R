@@ -19,6 +19,16 @@ body {
     }
 ```
 
+//Example with expand to full width
+```{css, echo=FALSE}
+body .main-container {
+  max-width: 100% !important;
+  width: 100% !important;
+    }
+body {
+  max-width: 100% !important;
+    }
+```
 
 ```{r read in data, results='asis', echo=FALSE, include=FALSE}
 library(tidyverse)
